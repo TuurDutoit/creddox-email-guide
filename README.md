@@ -8,7 +8,7 @@ A guide by [PursuitPower].
  * [Basics](#basics)
    * [Creating an email template](#creating-an-email-template)
    * [Base structure](#base-structure)
-   * [RelatedTo](#relatedto)
+   * [RelatedToType](#relatedtotype)
    * [Styles](#styles)
  * [Merging fields](#merging-fields)
    * [Dates](#dates)
@@ -17,7 +17,7 @@ A guide by [PursuitPower].
  * [Related lists](#related-lists)
  * [Testing a template](#testing-a-template)
  * [Resources](#resources)
- 
+
  
 ## Intro
 In this guide, you'll learn how to create email templates in Salesforce, specifically for Creddox objects. I assume you have at least a basic understanding of what email templates are; knowing how to make one will make it easier to follow along. You can read up on the subject in the [Salesforce docs](https://help.salesforce.com/htviewhelpdoc?id=admin_emailtemplates.htm).  
@@ -86,10 +86,10 @@ You can now start putting headings, paragraphs, lists, tables, etc. in the `body
 
 
 
-### RelatedTo
-I've mentioned the `relatedTo` attribute of the `<messaging:emailTemplate>` tag a few times now, and you're probably wondering what it means. As we'll see later, it is possible to merge variables, data from your Salesforce records, into your templates. In order to do this, every template is linked to a specific object. As a result, every email generated from a template, is linked to one record, from the `relatedTo` object.
+### RelatedToType
+I've mentioned the `relatedToType` attribute of the `<messaging:emailTemplate>` tag a few times now, and you're probably wondering what it means. As we'll see later, it is possible to merge variables, data from your Salesforce records, into your templates. In order to do this, every template is linked to a specific object. As a result, every email generated from a template, is linked to one record, from the `relatedToType` object.
 
-Let's illustrate this with an example. The default `Project Credential Basic` template aggregates some data from a Project Credential object and is sent to an employee (`recipientType="User"`). The template's `relatedTo` attribute is set to `project_credential__c`, the API name of the Project Credential object.
+Let's illustrate this with an example. The default `Project Credential Basic` template aggregates some data from a Project Credential object and is sent to an employee (`recipientType="User"`). The template's `relatedToType` attribute is set to `project_credential__c`, the API name of the Project Credential object.
 
 Your template should look like this now: [Step 3](blob/master/samples/step3.html).
 
