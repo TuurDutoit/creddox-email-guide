@@ -89,7 +89,11 @@ You can now start putting headings, paragraphs, lists, tables, etc. in the `body
 ### RelatedToType
 I've mentioned the `relatedToType` attribute of the `<messaging:emailTemplate>` tag a few times now, and you're probably wondering what it means. As we'll see later, it is possible to merge variables, data from your Salesforce records, into your templates. In order to do this, every template is linked to a specific object. As a result, every email generated from a template, is linked to one record, from the `relatedToType` object.
 
-Let's illustrate this with an example. The default `Project Credential Basic` template aggregates some data from a Project Credential object and is sent to an employee (`recipientType="User"`). The template's `relatedToType` attribute is set to `project_credential__c`, the API name of the Project Credential object.
+Let's illustrate this with an example. The default `Project Credential Basic` template aggregates some data from a Project Credential object and is sent to an employee (`recipientType="User"`). The template's `relatedToType` attribute is set to `project_credential__c`, the API name of the Project Credential object.  
+This is how you can find the API name of objects:
+
+ * For standard objects, it's just the singular name of the object, in CamelCase, e.g. `Contact`, `AccountContactRole`. The full list of API name sof standard object can be found [here](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_list.htm).
+ * For custom objects, search for `objects` in the setup area and click on `Objects`, then click on the name of the desired object. At the top of the page, you can find the API name (which usually ends in `__c`; this is part of the name).
 
 Your template should look like this now: [Step 3](samples/step3.html).
 
@@ -117,6 +121,7 @@ Your template should look like this now: [Step 4](samples/step4.html).
  * [Salesforce docs on Visualforce](https://developer.salesforce.com/docs/atlas.en-us.200.0.workbook_vf.meta/workbook_vf/visualforce_workbook_intro.htm)
  * [Introduction to HTML on MDN](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/HTML_basics)
  * [Introduction to CSS on MDN](https://developer.mozilla.org/en-US/Learn/CSS)
+ * [List of standard API name](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_list.htm)
 
 
 
