@@ -62,7 +62,7 @@ Inside the `<messaging:emailTemplate>` tag, there is a `<messaging:plainTextEmai
 We don't want to use plain text emails, but HTML, so we change this to `<messaging:htmlEmailBody>`. Don't forget to change the closing tag too!
 
 Now you can remove the default content and start writing your own.  
-Your template should look like this now: [Step 1](blob/master/samples/step1.html)
+Your template should look like this now: [Step 1](samples/step1.html)
 
 #### HTML
 > All the following goes inside the `<messaging:htmlEmailBody>` tag.
@@ -81,7 +81,7 @@ The rest of the content is wrapped in `<html></html>` tags. Inside those, there 
  * `<head></head>`: In the `head` tag, you'll put all the metadata about the document. This includes all the things needed for the document, but invisible to the recipient, e.g. style definitions used to customize the content.
  * `<body></body>`: The `body` tag is where you'll put the actual content of the email.
 
-Your template should look like this now: [Step 2](blob/master/samples/step2.html)  
+Your template should look like this now: [Step 2](samples/step2.html)  
 You can now start putting headings, paragraphs, lists, tables, etc. in the `body` tag.
 
 
@@ -91,7 +91,7 @@ I've mentioned the `relatedToType` attribute of the `<messaging:emailTemplate>` 
 
 Let's illustrate this with an example. The default `Project Credential Basic` template aggregates some data from a Project Credential object and is sent to an employee (`recipientType="User"`). The template's `relatedToType` attribute is set to `project_credential__c`, the API name of the Project Credential object.
 
-Your template should look like this now: [Step 3](blob/master/samples/step3.html).
+Your template should look like this now: [Step 3](samples/step3.html).
 
 
 ### Styles
@@ -104,7 +104,7 @@ You can add your styles to Creddox's `email_styles` component, or create your ow
 
 You can include a component anywhere in your template like this: `<c:component_name />` (this is a _self-closing_ tag, meaning it doesn't need a closing tag). For example, to include the `email_styles` component: `<c:email_styles />`.
 
-Your template should look like this now: [Step 4](blob/master/samples/step4.html).
+Your template should look like this now: [Step 4](samples/step4.html).
 
 
 
