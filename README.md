@@ -268,7 +268,7 @@ Nico Reagan | ![no](img/checkbox_unchecked.gif)
 
 ## Testing templates
 Before using your new templates, you'll want to test them. Luckily, Salesforce has a very nice testing mechanism.  
-Navigate your template's overview page and click `Send test and verify merge fields`. You'll get a dialog where you can choose a recipient and relatedTo record. Choose a value for both, optionally check `Send email preview to` and click `OK`. 
+Navigate your template's overview page and click `Send test and verify merge fields`. You'll get a dialog where you can choose a recipient and relatedTo record. Choose a value for both, optionally check `Send email preview to` and click `OK`. You'll now see an email preview, filled out for the record and recipient you chose. If you checked `Send email preview`, you'll receive a copy of this email in your inbox.
 
 
 
