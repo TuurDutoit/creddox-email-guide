@@ -134,6 +134,8 @@ For example, you could start your email with:
 
 Inside the `{! }` tags, you can do some more advanced stuff, like maths, logic and text transformations, like Formula fields. Docs on this can be found [here](https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_variables.htm).
 
+> **Note**: You can merge fields into the subject line of the email, the same way you would merge them into the body.
+
 
 ### apex:outputField
 The `<apex:outputField value="{!data}" />` tag, outputs a field's content, based on the type of field you give it, e.g. a checkbox is rendered as a checkbox, a currency uses the right format and a percent is followed by a `%`. Sometimes, you'll want some more customization options, which are covered below.
@@ -262,6 +264,11 @@ Employee    | Assignment Ongoing
 John Doe    | ![yes](img/checkbox_checked.gif)
 Nico Reagan | ![no](img/checkbox_unchecked.gif)
 
+
+
+## Testing templates
+Before using your new templates, you'll want to test them. Luckily, Salesforce has a very nice testing mechanism.  
+Navigate your template's overview page and click `Send test and verify merge fields`. You'll get a dialog where you can choose a recipient and relatedTo record. Choose a value for both, optionally check `Send email preview to` and click `OK`. 
 
 
 
