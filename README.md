@@ -20,6 +20,7 @@ A guide by [PursuitPower].
  * [Relational fields](#relational-fields)
  * [Related lists](#related-lists)
  * [Testing templates](#testing-templates)
+ * [Contributing](#contributing)
  * [Resources](#resources)
 
  
@@ -270,6 +271,11 @@ Nico Reagan | ![no](img/checkbox_unchecked.gif)
 Before using your new templates, you'll want to test them. Luckily, Salesforce has a very nice testing mechanism.  
 Navigate your template's overview page and click `Send test and verify merge fields`. You'll get a dialog where you can choose a recipient and relatedTo record. Choose a value for both, optionally check `Send email preview to` and click `OK`. You'll now see an email preview, filled out for the record and recipient you chose. If you checked `Send email preview`, you'll receive a copy of this email in your inbox.
 
+
+
+
+## Contributing
+Did you find an typo or mistake in this guide? Do you have a question about it? Is something not clear? Do you think you can explain something better? Please feel free to open an issue in the [issue tracker](../../issues)! And of course, Pull Requests are always welcome!
 
 
 
